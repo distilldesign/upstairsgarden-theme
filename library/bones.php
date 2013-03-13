@@ -34,8 +34,7 @@ function bones_ahoy() {
 
     // enqueue base scripts and styles
     add_action('wp_enqueue_scripts', 'bones_scripts_and_styles', 999);
-    // ie conditional wrapper
-
+		
     // launching this stuff after theme setup
     bones_theme_support();
 
@@ -120,19 +119,16 @@ function bones_gallery_style($css) {
 SCRIPTS & ENQUEUEING
 *********************/
 
-// loading modernizr and jquery, and reply script
+// loading jquery, and reply script
 function bones_scripts_and_styles() {
-  global $wp_styles; // call global $wp_styles variable to add conditional wrapper around ie stylesheet the WordPress way
   if (!is_admin()) {
-
-    // modernizr (without media query polyfill)
-    wp_register_script( 'bones-modernizr', get_stylesheet_directory_uri() . '/library/js/libs/modernizr.custom.min.js', array(), '2.5.3', false );
-
+		
+		// remove default wordpress jQuery
+		wp_deregister_script('jquery');
+		wp_dequeue_script('jquery');
+		
     // register main stylesheet
     wp_register_style( 'bones-stylesheet', get_stylesheet_directory_uri() . '/library/css/style.css', array(), '', 'all' );
-
-    // ie-only style sheet
-    wp_register_style( 'bones-ie-only', get_stylesheet_directory_uri() . '/library/css/ie.css', array(), '' );
 
     // comment reply script for threaded comments
     if ( is_singular() AND comments_open() AND (get_option('thread_comments') == 1)) {
@@ -140,20 +136,12 @@ function bones_scripts_and_styles() {
     }
 
     //adding scripts file in the footer
+    wp_register_script( 'jquery', '//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js', array(), '', true );
     wp_register_script( 'bones-js', get_stylesheet_directory_uri() . '/library/js/scripts.js', array( 'jquery' ), '', true );
 
     // enqueue styles and scripts
-    wp_enqueue_script( 'bones-modernizr' );
     wp_enqueue_style( 'bones-stylesheet' );
-    wp_enqueue_style('bones-ie-only');
-
-    $wp_styles->add_data( 'bones-ie-only', 'conditional', 'lt IE 9' ); // add conditional wrapper around ie stylesheet
-
-    /*
-    I recommend using a plugin to call jQuery
-    using the google cdn. That way it stays cached
-    and your site will load faster.
-    */
+		
     wp_enqueue_script( 'jquery' );
     wp_enqueue_script( 'bones-js' );
 

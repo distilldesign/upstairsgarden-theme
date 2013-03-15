@@ -2,62 +2,18 @@
 // Author: The Upstairs Garden Team
 // Stylesheet: Main Stylesheet
 
-$ugPrimaryColor: #C4C646
-$ugPrimaryColor: #E17546
-
-$bodyBackground: #F5F4F0
-$textColor: #43232E
-$baseFontFamily: "Open Sans"
-$baseFontSize: 16px
-$baseLineHeight: 28px
-
+@import "styles/variables"
+@import "styles/themes/orange/variables"
 @import "compass"
 @import "bootstrap"
 @import "bootstrap-responsive"
+@import "styles/layout"
+@import "styles/brand"
+@import "styles/nav"
+@import "styles/intro"
+@import "styles/posts"
+@import "styles/themes/orange/theme"
 
-body
-  background-image: url("../images/ug-bg.jpg")
-  background-position: -150%
-
-// Typography
-h1, h2, h3, h4, h5, h6
-  font-family: "Crete Round", Times, serif
-
-h1
-  +text-shadow(2px 2px 0px $bodyBackground, 4px 4px 0px rgba(0,0,0,0.15))
-
-// Brand
-.ug-brand
-  width: 175px
-  height: 175px
-  margin: 0 0 1em 0
-  border-radius: 100px
-  text-indent: -9999px
-  background-color: $ugPrimaryColor
-  background-repeat: no-repeat
-  background-position: 50% 50%
-  background-image: url("../images/ug-logo.png")
-  background-image: url("../images/ug-logo.svg")
-  background-size: 85%
-// Layout
-.container
-  position: relative
-.ug-site-header
-  padding: 2em 0
-.ug-nav-main
-  li
-    a
-      font-size: 80%
-      font-weight: bold
-      letter-spacing: 0.1em
-      text-transform: uppercase
-      color: $ugPrimaryColor
-.ug-site-content
-  margin-top: 3em
-.ug-post-meta
-  padding-left: 1em
-  border-left: 1px dotted #BBB
-  font-weight: 300
 // Figures
 .ug-figure-extend
   width: 130%

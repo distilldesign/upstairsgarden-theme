@@ -5814,15 +5814,14 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
   .nav-collapse.collapse {
     height: auto !important;
     overflow: visible !important; } }
-body {
-  background-image: url("../images/ug-bg.jpg");
-  background-position: -150%; }
+.container {
+  position: relative; }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Crete Round", Times, serif; }
+.ug-site-header {
+  padding: 2em 0; }
 
-h1 {
-  text-shadow: 2px 2px 0px #f5f4f0, 4px 4px 0px rgba(0, 0, 0, 0.15); }
+.ug-site-content {
+  margin-top: 3em; }
 
 .ug-brand {
   width: 175px;
@@ -5830,33 +5829,58 @@ h1 {
   margin: 0 0 1em 0;
   border-radius: 100px;
   text-indent: -9999px;
-  background-color: #e17546;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-image: url("../images/ug-logo.png");
   background-image: url("../images/ug-logo.svg");
   background-size: 85%; }
 
-.container {
-  position: relative; }
+.ug-nav-main li {
+  list-style-type: none; }
+  .ug-nav-main li.active {
+    margin-left: -1.25em; }
+  .ug-nav-main li a {
+    font-size: 80%;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    text-transform: uppercase; }
 
-.ug-site-header {
-  padding: 2em 0; }
+.ug-intro {
+  font-size: 130%;
+  font-style: italic;
+  line-height: 1.6;
+  text-align: center; }
+  .ug-intro .ug-intro-content {
+    width: 80%;
+    margin: 0 auto; }
+  .ug-intro strong {
+    font-weight: bold; }
 
-.ug-nav-main li a {
-  font-size: 80%;
-  font-weight: bold;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #e17546; }
-
-.ug-site-content {
-  margin-top: 3em; }
+.ug-post-header {
+  text-shadow: 2px 2px 0px #f5f4f0, 4px 4px 0px rgba(0, 0, 0, 0.15); }
 
 .ug-post-meta {
   padding-left: 1em;
   border-left: 1px dotted #bbbbbb;
   font-weight: 300; }
+
+body {
+  background-image: url("../images/ug-bg.jpg");
+  background-position: -150%; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Crete Round", Times, serif; }
+
+.ug-brand {
+  background-color: #e17546; }
+
+.ug-nav-main li a {
+  color: #e17546; }
+
+.ug-intro {
+  color: #86465c; }
+  .ug-intro strong {
+    color: #753d50; }
 
 .ug-figure-extend {
   width: 130%;

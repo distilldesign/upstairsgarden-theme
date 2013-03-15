@@ -2,5 +2,72 @@
 // Author: The Upstairs Garden Team
 // Stylesheet: Main Stylesheet
 
+$ugPrimaryColor: #C4C646
+$ugPrimaryColor: #E17546
+
+$bodyBackground: #F5F4F0
+$textColor: #4B3D3C
+$baseFontFamily: "Open Sans"
+$baseFontSize: 16px
+$baseLineHeight: 28px
+
 @import "compass"
 @import "bootstrap"
+@import "bootstrap-responsive"
+
+body
+  background-image: url("../images/ug-bg.jpg")
+  background-position: -150%
+
+// Typography
+h1, h2, h3, h4, h5, h6
+  font-family: "Crete Round", Times, serif
+
+// Brand
+.brand
+  width: 175px
+  height: 175px
+  margin: 0 0 1em 0
+  border-radius: 100px
+  text-indent: -9999px
+  background: $ugPrimaryColor url("../images/ug-logo.svg") no-repeat 50% 50%
+  background-size: 125%
+// Layout
+.container
+  position: relative
+.ug-site-header
+  padding: 2em 0
+.ug-nav-main
+  li
+    float: none
+    &.active a, &.active a:hover
+      color: $ugPrimaryColor
+      background: none
+    a
+      font-size: 80%
+      font-weight: bold
+      letter-spacing: 0.1em
+      text-transform: uppercase
+      color: $ugPrimaryColor
+      &:hover
+        background: none
+.ug-site-content
+  margin-top: 3em
+.ug-post-meta
+  margin-left: 1em
+  font-weight: 300
+// Figures
+.ug-figure
+  width: 130%
+  max-width: 130%
+  padding: 5px
+  border: 1px solid #AAA
+  border-radius: 4px
+  background: #FFF
+  .ug-figure-description
+    padding: 10px 5px 5px
+    font-style: italic
+    letter-spacing: 0.1em
+    text-align: center
+    i
+      +opacity(50)

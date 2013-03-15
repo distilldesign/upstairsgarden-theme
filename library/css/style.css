@@ -175,7 +175,7 @@ body {
   font-family: "Open Sans";
   font-size: 16px;
   line-height: 28px;
-  color: #4b3d3c;
+  color: #43232e;
   background-color: #f5f4f0; }
 
 a {
@@ -1257,7 +1257,7 @@ select:focus:invalid {
 
 .help-block,
 .help-inline {
-  color: #76605e; }
+  color: #753d50; }
 
 .help-block {
   display: block;
@@ -5821,14 +5821,21 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Crete Round", Times, serif; }
 
-.brand {
+h1 {
+  text-shadow: 2px 2px 0px #f5f4f0, 4px 4px 0px rgba(0, 0, 0, 0.15); }
+
+.ug-brand {
   width: 175px;
   height: 175px;
   margin: 0 0 1em 0;
   border-radius: 100px;
   text-indent: -9999px;
-  background: #e17546 url("../images/ug-logo.svg") no-repeat 50% 50%;
-  background-size: 125%; }
+  background-color: #e17546;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-image: url("../images/ug-logo.png");
+  background-image: url("../images/ug-logo.svg");
+  background-size: 85%; }
 
 .container {
   position: relative; }
@@ -5836,39 +5843,27 @@ h1, h2, h3, h4, h5, h6 {
 .ug-site-header {
   padding: 2em 0; }
 
-.ug-nav-main li {
-  float: none; }
-  .ug-nav-main li.active a, .ug-nav-main li.active a:hover {
-    color: #e17546;
-    background: none; }
-  .ug-nav-main li a {
-    font-size: 80%;
-    font-weight: bold;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: #e17546; }
-    .ug-nav-main li a:hover {
-      background: none; }
+.ug-nav-main li a {
+  font-size: 80%;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #e17546; }
 
 .ug-site-content {
   margin-top: 3em; }
 
 .ug-post-meta {
-  margin-left: 1em;
+  padding-left: 1em;
+  border-left: 1px dotted #bbbbbb;
   font-weight: 300; }
 
-.ug-figure {
+.ug-figure-extend {
   width: 130%;
   max-width: 130%;
-  padding: 5px;
-  border: 1px solid #aaaaaa;
-  border-radius: 4px;
+  padding: 10px;
   background: white; }
-  .ug-figure .ug-figure-description {
+  .ug-figure-extend .ug-figure-description {
     padding: 10px 5px 5px;
     font-style: italic;
-    letter-spacing: 0.1em;
-    text-align: center; }
-    .ug-figure .ug-figure-description i {
-      opacity: 0.5;
-      filter: alpha(opacity=50); }
+    letter-spacing: 0.1em; }

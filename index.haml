@@ -2,7 +2,6 @@
 %html
 	%head
 		%meta{charset: 'utf-8'}
-		%meta{http: {equiv: 'X-UA-Compatible'}, content: 'IE=edge,chrome=1'}
 		%meta{name: 'viewport', content: 'width=device-width'}
 		%link{href: 'library/css/style.css', rel: 'stylesheet', type: 'text/css'}
 		%link{href: 'http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css', rel: 'stylesheet', type: 'text/css'}
@@ -15,8 +14,8 @@
 			.row-fluid
 				.span3
 					.ug-site-header
-						%h1.brand Upstairs Garden
-						%ul.nav.nav-pills.ug-nav-main
+						%h1.ug-brand Upstairs Garden
+						%ul.ug-nav-main
 							%li.active
 								%a{href: '#'}
 									%i.icon-leaf
@@ -38,7 +37,7 @@
 							.span9
 								%p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lobortis neque at ipsum sodales in pharetra tellus commodo. Cras ut felis eu lacus laoreet vestibulum. Cras in nisi et metus adipiscing adipiscing. Morbi turpis tortor, commodo quis vulputate sed, faucibus id metus. Ut sed nisi ipsum, ut dapibus nulla. In hac habitasse platea dictumst. Sed elit nisi, faucibus sit amet sodales in, feugiat eu enim. Praesent fringilla erat sed nunc mattis dignissim. Nam eu neque a ligula convallis mattis in nec augue.
 								.ug-figure.ug-figure-extend
-									%img{src: 'library/images/flowers.jpg'}
+									%img{src: 'library/images/flowers.jpg', alt: 'Orange Kalanchoe flower close-up.'}
 									.ug-figure-description
 										A beautiful Kalanchoe in bloom.
 								%h2 Heading Two
@@ -51,3 +50,7 @@
 								.ug-post-meta
 									%div March 14, 2013
 									%div Fernando Gelin
+					.ug-site-footer
+						.row-fluid
+							.span8
+								Copyright 2013

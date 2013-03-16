@@ -5837,13 +5837,15 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
 
 .ug-nav-main li {
   list-style-type: none; }
-  .ug-nav-main li.active {
-    margin-left: -1.25em; }
   .ug-nav-main li a {
     font-size: 80%;
     font-weight: bold;
     letter-spacing: 0.1em;
     text-transform: uppercase; }
+  .ug-nav-main li i {
+    visibility: hidden; }
+  .ug-nav-main li.active i {
+    visibility: visible; }
 
 .ug-intro {
   font-size: 130%;
@@ -5859,10 +5861,41 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
 .ug-post-header {
   text-shadow: 2px 2px 0px #f5f4f0, 4px 4px 0px rgba(0, 0, 0, 0.15); }
 
-.ug-post-meta {
-  padding-left: 1em;
-  border-left: 1px dotted #bbbbbb;
-  font-weight: 300; }
+.ug-post-by {
+  margin-bottom: 1em; }
+  .ug-post-by .ug-post-by-extra {
+    margin-right: 0.5em;
+    font-style: italic; }
+  .ug-post-by .ug-post-by-author {
+    font-size: 90%;
+    letter-spacing: 0.2em;
+    text-transform: uppercase; }
+
+.ug-post-date {
+  margin: 0 auto;
+  width: 65px;
+  height: 50px;
+  padding-top: 15px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  font-size: 80%;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  background-color: #e17576; }
+  .ug-post-date > span {
+    display: block; }
+  .ug-post-date .ug-post-date-year {
+    font-size: 85%;
+    font-weight: normal; }
+
+.ug-recent-posts {
+  list-style-type: none;
+  margin: 0; }
 
 body {
   background-image: url("../images/ug-bg.jpg");
@@ -5870,6 +5903,9 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Crete Round", Times, serif; }
+
+a {
+  color: #543f6b; }
 
 .ug-brand {
   background-color: #e17546; }

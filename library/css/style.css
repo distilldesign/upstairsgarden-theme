@@ -5895,7 +5895,17 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
 
 .ug-recent-posts {
   list-style-type: none;
-  margin: 0; }
+  margin: 0;
+  font-size: 90%; }
+  .ug-recent-posts a {
+    display: block;
+    font-size: 90%;
+    color: #b15329; }
+
+.ug-site-meta {
+  padding: 2em 0;
+  font-size: 80%;
+  text-align: center; }
 
 body {
   background-image: url("../images/ug-bg.jpg");
@@ -5905,7 +5915,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Crete Round", Times, serif; }
 
 a {
-  color: #543f6b; }
+  color: #d33638; }
 
 .ug-brand {
   background-color: #e17546; }
@@ -5917,6 +5927,26 @@ a {
   color: #86465c; }
   .ug-intro strong {
     color: #753d50; }
+
+h2, h3, h4, h5, h6 {
+  margin: 20px 0 8px 0; }
+
+h3 {
+  font-size: 100%;
+  line-height: 1; }
+
+p {
+  margin-bottom: 2em; }
+
+hr {
+  border: 0;
+  border-bottom: 1px solid white; }
+
+hr.ug-fancy-hr {
+  height: 20px;
+  border: 0;
+  background-image: url("../images/hr.svg");
+  background-position: 50% 50%; }
 
 .ug-figure-extend {
   width: 130%;

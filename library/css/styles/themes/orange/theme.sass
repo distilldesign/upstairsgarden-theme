@@ -5,6 +5,20 @@ h1, h2, h3, h4, h5, h6
   font-family: "Crete Round", Times, serif
 a
   color: darken($ugAccentColor, 15%)
+
+.pager li
+  > a, > span
+    border: 0
+    background-color: transparent
+    &:hover
+      color: #FFF
+      background-color: $ugAccentColor
+  &.disabled
+    > a, > a:hover, > a:focus, > span
+      color: $grayLight
+      +opacity(50)
+      background-color: transparent
+
 .ug-brand
   background-color: $ugPrimaryColor
 .ug-nav-main li a

@@ -1,0 +1,19 @@
+.ug-figure
+  margin-bottom: 1em
+  padding: 10px
+  +box-shadow(0 0 15px rgba(0, 0, 0, 0.05))
+  background: #FFF
+  &.ug-figure-extend
+    width: 130%
+    max-width: 130%
+  .ug-figure-image
+    overflow: hidden
+  &.ug-figure-short .ug-figure-image
+    max-height: 200px
+  .ug-figure-description
+    padding: 10px 5px 5px
+    font-style: italic
+    letter-spacing: 0.1em
+    +opacity(70)
+    i
+      font-size: 70%

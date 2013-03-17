@@ -5838,6 +5838,7 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
 .ug-figure {
   margin-bottom: 1em;
   padding: 10px;
+  border: 1px solid #dddddd;
   -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
@@ -5962,6 +5963,9 @@ a {
   .ug-intro strong {
     color: #753d50; }
 
+body {
+  -webkit-font-smoothing: antialiased; }
+
 h2, h3, h4, h5, h6 {
   margin: 20px 0 8px 0; }
 
@@ -5981,3 +5985,6 @@ hr.ug-fancy-hr {
   border: 0;
   background-image: url("../images/hr.svg");
   background-position: 50% 50%; }
+
+.media-object {
+  max-width: 72px; }

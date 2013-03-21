@@ -6,6 +6,7 @@
     <link href='library/css/style.css' rel='stylesheet' type='text/css'>
     <link href='http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Sacramento' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,600,700' rel='stylesheet' type='text/css'>
     <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
     <title></title>
@@ -26,6 +27,12 @@
               <li>
                 <a href='#'>
                   <i class='icon-leaf'></i>
+                  Archive
+                </a>
+              </li>
+              <li>
+                <a href='#'>
+                  <i class='icon-leaf'></i>
                   About
                 </a>
               </li>
@@ -38,6 +45,14 @@
             </ul>
           </div>
           <aside class='ug-site-sidebar'>
+            <form class='form-search'>
+              <div class='input-append'>
+                <input class='search-query' placeholder='Search' type='text'>
+                <button class='btn' type='submit'>
+                  <i class='icon-search'></i>
+                </button>
+              </div>
+            </form>
             <h3>Recently&hellip;</h3>
             <ul class='ug-recent-posts'>
               <li>
@@ -45,6 +60,21 @@
               </li>
               <li>
                 <a href='#'>Lorem Ipsum Dolor Sit Imet</a>
+              </li>
+            </ul>
+            <h3>Categories</h3>
+            <ul class='ug-categories'>
+              <li>
+                <a href='#'>Containers</a>
+              </li>
+              <li>
+                <a href='#'>Design</a>
+              </li>
+              <li>
+                <a href='#'>Planting</a>
+              </li>
+              <li>
+                <a href='#'>Species</a>
               </li>
             </ul>
           </aside>
@@ -68,6 +98,11 @@
                   <div class='ug-post-by'>
                     <span class='ug-post-by-extra'>by</span>
                     <span class='ug-post-by-author'>Fernando Gelin</span>
+                    <span class='ug-post-by-extra'>in</span>
+                    <span class='ug-post-by-category'>
+                      <a href='#'>Planting,</a>
+                      <a href='#'>Containers</a>
+                    </span>
                   </div>
                 </div>
               </div>
@@ -96,15 +131,23 @@
                       <div class='media-body'>
                         <h4 class='media-heading'>Species Profile:  Sweet Pea</h4>
                         <i>Lathyrus odoratus</i>
+                        <table class='table table-striped'>
+                          <tbody>
+                            <tr>
+                              <th>Type</th>
+                              <td>Annual Flowering Climber</td>
+                            </tr>
+                            <tr>
+                              <th>Height</th>
+                              <td>1 &ndash; 2 <small><i>m</i></small></td>
+                            </tr>
+                            <tr>
+                              <th>Light</th>
+                              <td>Full Sun</td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
-                      <dl class='dl-horizontal'>
-                        <dt>Type</dt>
-                        <dd>Annual Flowering Climber</dd>
-                        <dt>Height</dt>
-                        <dd>1 &ndash; 2 <small><i>m</i></small></dd>
-                        <dt>Light</dt>
-                        <dd>Full Sun</dd>
-                      </dl>
                     </div>
                   </div>
                   <p>Praesent et consectetur erat. Suspendisse scelerisque consectetur mi, in dictum dui euismod quis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas auctor bibendum posuere. Duis consequat commodo massa eu porttitor. Integer purus sem, laoreet quis gravida a, blandit vitae arcu. Sed faucibus orci in dolor eleifend interdum. Maecenas egestas imperdiet nisl vitae tempus. Morbi pulvinar scelerisque justo non elementum.</p>
@@ -131,7 +174,78 @@
                   </a>
                 </li>
               </ul>
-              <hr class='ug-fancy-hr'>
+              <div class='ug-comments'>
+                <h2 class='handwritten'>Comments</h2>
+                <ol class='commentlist'>
+                  <li class='comment even thread-even depth-1' id='comment-1'>
+                    <div class='row-fluid'>
+                      <div class='span9'>
+                        <div class='comment-body'>
+                          <p>
+                            Hi, this is a comment.
+                            <br>
+                            To delete a comment, just log in and view the post's comments. There you will have
+                            the option to edit or delete them.
+                          </p>
+                        </div>
+                      </div>
+                      <div class='span3'>
+                        <a href='http://localhost/?p=1#comment-1'>
+                          <div class='comment-commenter'>Mr WordPress</div>
+                          <div class='comment-date'>March 13, 2013</div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class='visible-phone'>
+                      <hr class='ug-fancy-hr'>
+                    </div>
+                  </li>
+                </ol>
+              </div>
+              <div class='ug-module'>
+                <div class='ug-module-inner'>
+                  <div class='row-fluid'>
+                    <div class='span5'>
+                      <h3>Join the conversation.</h3>
+                      <p>
+                        Like a plant, idea, or picture in this post?  Want to
+                        respond to another commenter?  Leave a comment and let
+                        us know what's on your mind.
+                        <i class='icon-leaf'></i>
+                      </p>
+                    </div>
+                    <div class='span5 offset1'>
+                      <form class='ug-comment-form'>
+                        <div class='field'>
+                          <div class='input-prepend input-block-level'>
+                            <span class='add-on'>
+                              <i class='icon-user'></i>
+                            </span>
+                            <input class='input-block-level' name='name' placeholder='Full Name*' required='required' type='text'>
+                          </div>
+                        </div>
+                        <div class='field'>
+                          <div class='input-prepend input-block-level'>
+                            <span class='add-on'>
+                              <i class='icon-envelope'></i>
+                            </span>
+                            <input class='input-block-level' name='email' placeholder='Email*' required='required' type='text'>
+                          </div>
+                        </div>
+                        <div class='field'>
+                          <div class='input-prepend textarea-prepend input-block-level'>
+                            <span class='add-on'>
+                              <i class='icon-edit'></i>
+                            </span>
+                            <textarea name='comment' placeholder='Comment*' required='required'></textarea>
+                          </div>
+                        </div>
+                        <button class='btn btn-block' type='submit'>Post Comment</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </article>
           </div>
         </div>
@@ -140,9 +254,10 @@
     <div class='ug-site-footer'>
       <div class='container'>
         <div class='ug-site-meta'>
+          <hr class='ug-fancy-hr'>
           Handmade with <strong>HTML5</strong>,
           <strong>SASS</strong>, and <strong>WordPress</strong>.
-          Proudly manufactured in <strong>Burlington, Vermont</strong>.
+          Proudly made in <strong>Burlington, Vermont</strong>.
           <br>
           <a href='https://github.com/distilldesign/upstairsgarden-theme' target='_blank'>
             Fork this theme on GitHub.

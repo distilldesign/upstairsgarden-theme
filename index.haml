@@ -6,6 +6,7 @@
 		%link{href: 'library/css/style.css', rel: 'stylesheet', type: 'text/css'}
 		%link{href: 'http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css', rel: 'stylesheet', type: 'text/css'}
 		%link{href: 'http://fonts.googleapis.com/css?family=Crete+Round', rel: 'stylesheet', type: 'text/css'}
+		%link{href: 'http://fonts.googleapis.com/css?family=Sacramento', rel: 'stylesheet', type: 'text/css'}
 		%link{href: 'http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,600,700', rel: 'stylesheet', type: 'text/css'}
 		%script{src: 'http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'}
 		%title
@@ -23,18 +24,37 @@
 							%li
 								%a{href: '#'}
 									%i.icon-leaf
+									Archive
+							%li
+								%a{href: '#'}
+									%i.icon-leaf
 									About
 							%li
 								%a{href: '#'}
 									%i.icon-leaf
 									Contact
 					%aside.ug-site-sidebar
+						%form.form-search
+							.input-append
+								%input.search-query{type: 'text', placeholder: 'Search'}
+								%button.btn{type: 'submit'}
+									%i.icon-search
 						%h3 Recently&hellip;
 						%ul.ug-recent-posts
 							%li
 								%a{href: '#'} Starting a Container Garden
 							%li
 								%a{href: '#'} Lorem Ipsum Dolor Sit Imet
+						%h3 Categories
+						%ul.ug-categories
+							%li
+								%a{href: '#'} Containers
+							%li
+								%a{href: '#'} Design
+							%li
+								%a{href: '#'} Planting
+							%li
+								%a{href: '#'} Species
 				.span9
 					.ug-site-content
 						.ug-intro
@@ -51,6 +71,10 @@
 									.ug-post-by
 										%span.ug-post-by-extra by
 										%span.ug-post-by-author Fernando Gelin
+										%span.ug-post-by-extra in
+										%span.ug-post-by-category
+											%a{href: '#'} Planting,
+											%a{href: '#'} Containers
 							.row-fluid
 								.span9
 									%p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lobortis neque at ipsum sodales in pharetra tellus commodo. Cras ut felis eu lacus laoreet vestibulum. Cras in nisi et metus adipiscing adipiscing. Morbi turpis tortor, commodo quis vulputate sed, faucibus id metus. Ut sed nisi ipsum, ut dapibus nulla. In hac habitasse platea dictumst. Sed elit nisi, faucibus sit amet sodales in, feugiat eu enim. Praesent fringilla erat sed nunc mattis dignissim. Nam eu neque a ligula convallis mattis in nec augue.
@@ -72,13 +96,17 @@
 											.media-body
 												%h4.media-heading Species Profile:  Sweet Pea
 												%i Lathyrus odoratus
-											%dl.dl-horizontal
-												%dt	Type
-												%dd Annual Flowering Climber
-												%dt Height
-												%dd 1 &ndash; 2 <small><i>m</i></small>
-												%dt Light
-												%dd Full Sun
+												%table.table.table-striped
+													%tbody
+														%tr
+															%th	Type
+															%td Annual Flowering Climber
+														%tr
+															%th Height
+															%td 1 &ndash; 2 <small><i>m</i></small>
+														%tr
+															%th Light
+															%td Full Sun
 									%p Praesent et consectetur erat. Suspendisse scelerisque consectetur mi, in dictum dui euismod quis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas auctor bibendum posuere. Duis consequat commodo massa eu porttitor. Integer purus sem, laoreet quis gravida a, blandit vitae arcu. Sed faucibus orci in dolor eleifend interdum. Maecenas egestas imperdiet nisl vitae tempus. Morbi pulvinar scelerisque justo non elementum.
 								.span3
 									%aside.ug-post-date
@@ -94,13 +122,60 @@
 									%a{href: '#'}
 										Newer
 										%i.icon-hand-right
-							%hr.ug-fancy-hr
+							-#%hr.ug-fancy-hr
+							.ug-comments
+								%h2.handwritten Comments
+								%ol.commentlist
+									%li#comment-1.comment.even.thread-even.depth-1
+										.row-fluid
+											.span9
+												.comment-body
+													%p
+														Hi, this is a comment.
+														%br
+														To delete a comment, just log in and view the post's comments. There you will have
+														the option to edit or delete them.
+											.span3
+												%a{href: 'http://localhost/?p=1#comment-1'}
+													.comment-commenter Mr WordPress
+													.comment-date March 13, 2013
+										.visible-phone
+											%hr.ug-fancy-hr
+							.ug-module
+								.ug-module-inner
+									.row-fluid
+										.span5
+											%h3 Join the conversation.
+											%p
+												Like a plant, idea, or picture in this post?  Want to
+												respond to another commenter?  Leave a comment and let
+												us know what's on your mind.
+												%i.icon-leaf
+										.span5.offset1
+											%form.ug-comment-form
+												.field
+													.input-prepend.input-block-level
+														%span.add-on
+															%i.icon-user
+														%input.input-block-level{placeholder: 'Full Name*', type: 'text', name: 'name', required: 'required'}
+												.field
+													.input-prepend.input-block-level
+														%span.add-on
+															%i.icon-envelope
+														%input.input-block-level{placeholder: 'Email*', type: 'text', name: 'email', required: 'required'}
+												.field
+													.input-prepend.textarea-prepend.input-block-level
+														%span.add-on
+															%i.icon-edit
+														%textarea{placeholder: 'Comment*', name: 'comment', required: 'required'}
+												%button.btn.btn-block{type: 'submit'} Post Comment
 		.ug-site-footer
 			.container
 				.ug-site-meta
+					%hr.ug-fancy-hr
 					Handmade with <strong>HTML5</strong>,
 					<strong>SASS</strong>, and <strong>WordPress</strong>.
-					Proudly manufactured in <strong>Burlington, Vermont</strong>.
+					Proudly made in <strong>Burlington, Vermont</strong>.
 					%br
 					%a{href: 'https://github.com/distilldesign/upstairsgarden-theme', target: '_blank'}
 						Fork this theme on GitHub.

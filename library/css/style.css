@@ -5818,7 +5818,7 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
   position: relative; }
 
 .ug-site-header {
-  padding: 2em 0; }
+  padding: 2em 0 0; }
 
 .ug-site-content {
   margin-top: 3em; }
@@ -5834,6 +5834,44 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
   background-image: url("../images/ug-logo.png");
   background-image: url("../images/ug-logo.svg");
   background-size: 85%; }
+
+.ug-categories {
+  list-style-type: none;
+  margin: 0; }
+  .ug-categories a {
+    display: block;
+    font-size: 90%; }
+
+.ug-comments a:hover {
+  text-decoration: none; }
+.ug-comments .commentlist {
+  list-style-type: none;
+  margin: 0; }
+.ug-comments .comment-body {
+  padding-top: 0.75em;
+  border-top: 1px solid #dddddd; }
+.ug-comments .comment-commenter {
+  padding-top: 0.75em;
+  border-top: 1px solid #dddddd;
+  color: #43232e;
+  font-size: 90%;
+  letter-spacing: 0.2em;
+  text-transform: uppercase; }
+.ug-comments .comment-date {
+  font-size: 90%;
+  font-style: italic; }
+.ug-comments .comment-body {
+  clear: both; }
+
+.ug-comment-form .input-prepend input {
+  width: 90%; }
+.ug-comment-form .textarea-prepend .add-on {
+  height: 75px; }
+.ug-comment-form .textarea-prepend textarea {
+  width: 86%;
+  height: 75px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0; }
 
 .ug-figure {
   margin-bottom: 1em;
@@ -5859,17 +5897,31 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
     .ug-figure .ug-figure-description i {
       font-size: 70%; }
 
-.ug-nav-main li {
-  list-style-type: none; }
-  .ug-nav-main li a {
-    font-size: 80%;
-    font-weight: bold;
-    letter-spacing: 0.1em;
-    text-transform: uppercase; }
-  .ug-nav-main li i {
-    visibility: hidden; }
-  .ug-nav-main li.active i {
-    visibility: visible; }
+.ug-module {
+  margin-bottom: 1em;
+  padding: 3px;
+  border: 1px solid #dddddd;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  background: white; }
+  .ug-module .ug-module-inner {
+    padding: 1em;
+    border: 1px solid #eeeeee; }
+
+.ug-nav-main {
+  margin-left: 0; }
+  .ug-nav-main li {
+    list-style-type: none; }
+    .ug-nav-main li a {
+      font-size: 80%;
+      font-weight: bold;
+      letter-spacing: 0.1em;
+      text-transform: uppercase; }
+    .ug-nav-main li i {
+      visibility: hidden; }
+    .ug-nav-main li.active i {
+      visibility: visible; }
 
 .ug-intro {
   font-size: 130%;
@@ -5882,17 +5934,18 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
   .ug-intro strong {
     font-weight: bold; }
 
-.ug-post-header {
-  text-shadow: 2px 2px 0px #f5f4f0, 4px 4px 0px rgba(0, 0, 0, 0.15); }
-
 .ug-post-by {
   margin-bottom: 1em; }
   .ug-post-by .ug-post-by-extra {
-    margin-right: 0.5em;
+    margin: 0 0.5em;
     font-style: italic; }
   .ug-post-by .ug-post-by-author {
     font-size: 90%;
     letter-spacing: 0.2em;
+    text-transform: uppercase; }
+  .ug-post-by .ug-post-by-category {
+    font-size: 75%;
+    letter-spacing: 0.1em;
     text-transform: uppercase; }
 
 .ug-post-date {
@@ -5919,11 +5972,23 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
 
 .ug-recent-posts {
   list-style-type: none;
-  margin: 0;
-  font-size: 90%; }
+  margin: 0; }
   .ug-recent-posts a {
     display: block;
     font-size: 90%; }
+
+input[type="text"].search-query {
+  width: 25%;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  -webkit-transition: width 0.3s ease-out;
+  -moz-transition: width 0.3s ease-out;
+  -o-transition: width 0.3s ease-out;
+  transition: width 0.3s ease-out; }
+  input[type="text"].search-query:focus {
+    width: 50%;
+    opacity: 1;
+    filter: alpha(opacity=100); }
 
 .ug-site-meta {
   padding: 2em 0;
@@ -5938,7 +6003,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Crete Round", Times, serif; }
 
 a {
-  color: #d33638; }
+  color: #bc4e1e; }
 
 .pager li > a, .pager li > span {
   border: 0;
@@ -5963,11 +6028,23 @@ a {
   .ug-intro strong {
     color: #753d50; }
 
+.ug-comments h2 {
+  color: #e17576; }
+
 body {
   -webkit-font-smoothing: antialiased; }
 
 h2, h3, h4, h5, h6 {
   margin: 20px 0 8px 0; }
+
+h1 {
+  text-shadow: 2px 2px 0px #f5f4f0, 4px 4px 0px rgba(0, 0, 0, 0.15); }
+
+h2.handwritten {
+  margin: 0;
+  font-weight: 200;
+  font-family: Sacramento;
+  text-shadow: 1px 1px 0px #f5f4f0, 2px 2px 0px rgba(0, 0, 0, 0.1); }
 
 h3 {
   font-size: 100%;

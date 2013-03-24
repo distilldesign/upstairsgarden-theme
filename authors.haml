@@ -1,0 +1,116 @@
+!!!
+%html
+	%head
+		%meta{charset: 'utf-8'}
+		%meta{name: 'viewport', content: 'width=device-width'}
+		%link{href: 'library/css/style.css', rel: 'stylesheet', type: 'text/css'}
+		%link{href: 'http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css', rel: 'stylesheet', type: 'text/css'}
+		%link{href: 'http://fonts.googleapis.com/css?family=Crete+Round', rel: 'stylesheet', type: 'text/css'}
+		%link{href: 'http://fonts.googleapis.com/css?family=Sacramento', rel: 'stylesheet', type: 'text/css'}
+		%link{href: 'http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,600,700', rel: 'stylesheet', type: 'text/css'}
+		%script{src: 'http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'}
+		%title
+	%body
+		.container
+			.row-fluid
+				.span3
+					.ug-site-header
+						%h1.ug-brand Upstairs Garden
+						%ul.ug-nav-main
+							%li
+								%a{href: 'index.html'}
+									%i.icon-leaf
+									Home
+							%li
+								%a{href: '#'}
+									%i.icon-leaf
+									Archive
+							%li.active
+								%a{href: 'authors.html'}
+									%i.icon-leaf
+									About
+					%aside.ug-site-sidebar
+						%form.form-search
+							.input-append
+								%input.search-query{type: 'text', placeholder: 'Search'}
+								%button.btn{type: 'submit'}
+									%i.icon-search
+						%h3 Recently&hellip;
+						%ul.ug-recent-posts
+							%li
+								%a{href: '#'} Starting a Container Garden
+							%li
+								%a{href: '#'} Lorem Ipsum Dolor Sit Imet
+						%h3 Categories
+						%ul.ug-categories
+							%li
+								%a{href: '#'} Containers
+							%li
+								%a{href: '#'} Design
+							%li
+								%a{href: '#'} Planting
+							%li
+								%a{href: '#'} Species
+				.span9
+					.ug-site-content
+						.ug-intro
+							%hr
+							.ug-intro-content
+								%strong Upstairs Garden is a blog
+								by a couple of guys in Vermont.  We grow plants indoors in zone
+								4 with a SE exposure.
+							%hr.ug-fancy-hr
+						%article
+							.row-fluid
+								.span5
+									.ug-author
+										%img.img-circle.img-polaroid{src: 'library/images/flowers-square.jpg', alt: 'Orange Kalanchoe flowers are beautiful.'}
+										%h3.text-center John Doe
+										%p Nunc purus felis, pharetra non rutrum eget, varius eu eros. Vivamus adipiscing egestas odio, sit amet tristique leo consequat vel. Curabitur congue ultrices volutpat. Aenean consequat, elit vitae tristique consequat, diam urna gravida lectus, at vulputate magna metus nec arcu. Vivamus et nulla vel dolor elementum dignissim eget vel sem. Proin massa ipsum, tristique sodales dictum id, porta ac quam. Aliquam erat volutpat.
+								.span5.offset1
+									.ug-author
+										%img.img-circle.img-polaroid{src: 'library/images/flowers-square.jpg', alt: 'Orange Kalanchoe flowers are beautiful.'}
+										%h3.text-center John Doe
+										%p Etiam venenatis nisi sed tellus tincidunt scelerisque. Nullam mattis libero eget neque pharetra volutpat. Nulla facilisi. In et accumsan nunc. Aenean tincidunt rutrum ante sit amet gravida. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean et metus augue. Vivamus vestibulum dui in lacus fringilla vel vehicula massa dictum. Mauris risus quam, aliquam sed rhoncus quis, luctus tincidunt ligula.
+							
+							%h2.handwritten Contact Us
+							
+							.ug-module
+								.ug-module-inner
+									.row-fluid
+										.span5
+											%h3 Get in Touch
+											%p
+												Like a post, plant, or picture in the blog?  Have an
+												idea for a post?  Leave a comment and let us know what's
+												on your mind.
+												%i.icon-leaf
+										.span5.offset1
+											%form.ug-comment-form
+												.field
+													.input-prepend.input-block-level
+														%span.add-on
+															%i.icon-user
+														%input.input-block-level{placeholder: 'Full Name*', type: 'text', name: 'name', required: 'required'}
+												.field
+													.input-prepend.input-block-level
+														%span.add-on
+															%i.icon-envelope
+														%input.input-block-level{placeholder: 'Email*', type: 'text', name: 'email', required: 'required'}
+												.field
+													.input-prepend.textarea-prepend.input-block-level
+														%span.add-on
+															%i.icon-edit
+														%textarea{placeholder: 'Comment*', name: 'comment', required: 'required'}
+												%button.btn.btn-block{type: 'submit'} Post Comment
+							
+		.ug-site-footer
+			.container
+				.ug-site-meta
+					%hr.ug-fancy-hr
+					Handmade with <strong>HTML5</strong>,
+					<strong>SASS</strong>, and <strong>WordPress</strong>.
+					Proudly made in <strong>Burlington, Vermont</strong>.
+					%br
+					%a{href: 'https://github.com/distilldesign/upstairsgarden-theme', target: '_blank'}
+						Fork this theme on GitHub.

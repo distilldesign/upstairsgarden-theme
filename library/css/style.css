@@ -5909,18 +5909,18 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
     padding: 1em;
     border: 1px solid #eeeeee; }
 
-.ug-nav-main {
+.ug-nav-main, .ug-nav-main ul {
   margin-left: 0; }
-  .ug-nav-main li {
+  .ug-nav-main li, .ug-nav-main ul li {
     list-style-type: none; }
-    .ug-nav-main li a {
+    .ug-nav-main li a, .ug-nav-main ul li a {
       font-size: 80%;
       font-weight: bold;
       letter-spacing: 0.1em;
       text-transform: uppercase; }
-    .ug-nav-main li i {
+    .ug-nav-main li i, .ug-nav-main ul li i {
       visibility: hidden; }
-    .ug-nav-main li.active i {
+    .ug-nav-main li.active i, .ug-nav-main li.current_page_item i, .ug-nav-main ul li.active i, .ug-nav-main ul li.current_page_item i {
       visibility: visible; }
 
 .ug-intro {

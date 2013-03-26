@@ -5990,10 +5990,17 @@ input[type="text"].search-query {
     opacity: 1;
     filter: alpha(opacity=100); }
 
+.ug-site-sidebar {
+  font-size: 90%; }
+
 .ug-site-meta {
   padding: 2em 0;
   font-size: 80%;
   text-align: center; }
+
+.widget ul {
+  list-style-type: none;
+  margin: 0; }
 
 body {
   background-image: url("../images/ug-bg.jpg");

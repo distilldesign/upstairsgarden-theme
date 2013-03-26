@@ -26,3 +26,4 @@
           <?php get_sidebar(); ?>
         </div>
         <div class="span9">
+					<div class="ug-site-content">

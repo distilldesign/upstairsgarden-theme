@@ -1,3 +1,4 @@
+	</div> <!-- end .ug-site-content -->
 			<footer class="footer" role="contentinfo">
 
 				<div id="inner-footer" class="wrap clearfix">

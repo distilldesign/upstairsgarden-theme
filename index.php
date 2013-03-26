@@ -1,6 +1,6 @@
 <?php get_header(); ?>
-
-			<div id="content">
+	<div class="ug-site-content">
+		<?php get_sidebar('index1'); ?>
 
 				<div id="inner-content" class="wrap clearfix">
 
@@ -62,8 +62,6 @@
 							<?php endif; ?>
 
 						</div> <!-- end #main -->
-
-						<?php get_sidebar(); ?>
 
 				</div> <!-- end #inner-content -->
 

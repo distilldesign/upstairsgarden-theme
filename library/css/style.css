@@ -5970,6 +5970,9 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
     font-size: 85%;
     font-weight: normal; }
 
+.ug-post-header a:hover {
+  text-decoration: none; }
+
 .ug-recent-posts {
   list-style-type: none;
   margin: 0; }
@@ -6034,6 +6037,9 @@ a {
   color: #86465c; }
   .ug-intro strong {
     color: #753d50; }
+
+.ug-post-header a {
+  color: #43232e; }
 
 .ug-comments h2 {
   color: #e17576; }

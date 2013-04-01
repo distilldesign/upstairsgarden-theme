@@ -1,23 +1,21 @@
-	</div> <!-- end .ug-site-content -->
-			<footer class="footer" role="contentinfo">
-
-				<div id="inner-footer" class="wrap clearfix">
-
-					<nav role="navigation">
-							<?php bones_footer_links(); ?>
-									</nav>
-
-					<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>.</p>
-
-				</div> <!-- end #inner-footer -->
-
-			</footer> <!-- end footer -->
-
-		</div> <!-- end #container -->
-
-		<!-- all js scripts are loaded in library/bones.php -->
-		<?php wp_footer(); ?>
-
+				</div>
+			</div>
+		</div>
+		<div class="ug-site-footer">
+		  <div class="container">
+		    <div class="ug-site-meta">
+		      <hr class="ug-fancy-hr">
+					<?php bloginfo('name'); ?> is
+		      handmade with <strong>HTML5</strong>,
+		      <strong>SASS</strong>, and <strong>WordPress</strong>.
+		      Proudly made in <strong>Burlington, Vermont</strong>.
+		      <br>
+		      <a href="https://github.com/distilldesign/upstairsgarden-theme" target="_blank">
+		        Fork this theme on GitHub.
+		      </a>
+		    </div>
+		  </div>
+			<?php wp_footer(); ?>
+		</div>
 	</body>
-
-</html> <!-- end page. what a ride! -->
+</html>

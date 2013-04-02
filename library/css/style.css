@@ -5887,17 +5887,18 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
     .ug-figure .ug-figure-description i {
       font-size: 70%; }
 
-form br {
-  display: none; }
-form .input-prepend input {
+form .input-prepend input, .ug-form .input-prepend input {
   width: 90%; }
-form .textarea-prepend .add-on {
+form .textarea-prepend .add-on, .ug-form .textarea-prepend .add-on {
   height: 75px; }
-form .textarea-prepend textarea {
+form .textarea-prepend textarea, .ug-form .textarea-prepend textarea {
   width: 86%;
   height: 75px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0; }
+
+.wpcf7 p, .wpcf7 br {
+  display: none; }
 
 .ug-module {
   margin-bottom: 1em;

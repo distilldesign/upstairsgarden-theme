@@ -5863,16 +5863,6 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
 .ug-comments .comment-body {
   clear: both; }
 
-.ug-comment-form .input-prepend input {
-  width: 90%; }
-.ug-comment-form .textarea-prepend .add-on {
-  height: 75px; }
-.ug-comment-form .textarea-prepend textarea {
-  width: 86%;
-  height: 75px;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0; }
-
 .ug-figure {
   margin-bottom: 1em;
   padding: 10px;
@@ -5896,6 +5886,18 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
     filter: alpha(opacity=70); }
     .ug-figure .ug-figure-description i {
       font-size: 70%; }
+
+form br {
+  display: none; }
+form .input-prepend input {
+  width: 90%; }
+form .textarea-prepend .add-on {
+  height: 75px; }
+form .textarea-prepend textarea {
+  width: 86%;
+  height: 75px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0; }
 
 .ug-module {
   margin-bottom: 1em;

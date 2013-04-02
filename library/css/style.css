@@ -6049,6 +6049,8 @@ body {
 
 h2, h3, h4, h5, h6 {
   margin: 20px 0 8px 0; }
+  h2 span, h3 span, h4 span, h5 span, h6 span {
+    font-weight: normal; }
 
 h1 {
   text-shadow: 2px 2px 0px #f5f4f0, 4px 4px 0px rgba(0, 0, 0, 0.15); }
